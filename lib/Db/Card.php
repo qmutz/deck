@@ -117,4 +117,8 @@ class Card extends RelationalEntity {
 		unset($json['descriptionPrev']);
 		return $json;
 	}
+
+	public function getETag() {
+		return md5((string)$this->getLastModified());
+	}
 }
