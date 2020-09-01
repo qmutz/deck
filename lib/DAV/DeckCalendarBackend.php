@@ -26,16 +26,12 @@ declare(strict_types=1);
 
 namespace OCA\Deck\DAV;
 
-use OCA\Deck\BadRequestException;
 use OCA\Deck\Db\Board;
 use OCA\Deck\Db\BoardMapper;
-use OCA\Deck\NoPermissionException;
 use OCA\Deck\Service\BoardService;
 use OCA\Deck\Service\CardService;
 use OCA\Deck\Service\PermissionService;
 use OCA\Deck\Service\StackService;
-use OCP\AppFramework\Db\DoesNotExistException;
-use OCP\AppFramework\Db\MultipleObjectsReturnedException;
 use Sabre\DAV\Exception\NotFound;
 
 class DeckCalendarBackend {
